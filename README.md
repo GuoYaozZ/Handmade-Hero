@@ -18,3 +18,7 @@ I use VS2022, 'Build.bat' can be used too in cmd.
 ### Day002
 **Day002 learns: open the window and paint on it**
 If we met import error(__imp_...) not defined, we can go to the MSDN website, find the function/property, grab the library which is need(shown on the site), and sticky it on build.bat.
+
+### Day003
+**Day003: Try to build a buffer and paint by buffer.**
+'HWND' is a window handle. 'HDC' (Handle to Device Context) is the device context handle.
