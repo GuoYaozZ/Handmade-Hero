@@ -27,3 +27,8 @@ If we met import error(__imp_...) not defined, we can go to the MSDN website, fi
 **Day004: Learn how to Animating the Buffer.**  
 One way to prevent "use after free" is to protect the memory used.  
 MEM_COMMIT - MEM_DECOMMIT, MEM_RESERVE - MEM_RELEASE, they are using in different circumstance.  
+
+### Day005
+**Day005: Recap: step-through of program behavior.**
+Optimization 1: Passing a struct is better than passing a pointer(which may cause pointer aliasing) when function and things is relativly small, beacuse compiler doesnt know enough information to do optimization.  
+Optimization 2: Dealing with global variables more cleanly by bundling them up into structures.  
