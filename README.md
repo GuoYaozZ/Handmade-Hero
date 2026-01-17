@@ -29,6 +29,10 @@ One way to prevent "use after free" is to protect the memory used.
 MEM_COMMIT - MEM_DECOMMIT, MEM_RESERVE - MEM_RELEASE, they are using in different circumstance.  
 
 ### Day005
-**Day005: Recap: step-through of program behavior.**
+**Day005: Recap: step-through of program behavior.**  
 Optimization 1: Passing a struct is better than passing a pointer(which may cause pointer aliasing) when function and things is relativly small, beacuse compiler doesnt know enough information to do optimization.  
 Optimization 2: Dealing with global variables more cleanly by bundling them up into structures.  
+Stack: The stack supported by x86 hardware "grow downwards", the 'push' instruction causes the stack pointer (sp) to decrement by one slot, and the pop instruction causes the stack pointer to increment by one slot. Other hardware architectures may have different behaviors.
+
+### Day006
+**Day006: Keyboard Input and Controller Input**  
