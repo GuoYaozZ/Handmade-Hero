@@ -38,6 +38,8 @@ Stack: The stack supported by x86 hardware "grow downwards", the 'push' instruct
 **Day006: Keyboard Input and Controller Input**  
 
 ### Day007
-**Day007: Initializing DirectSound**
+**Day007: Initializing DirectSound**  
 Learn how to request a cache and cache structure for sound.  
 
+### Day008
+**Day008: Writing a Square Wave to DirectSound**  
