@@ -43,3 +43,6 @@ Learn how to request a cache and cache structure for sound.
 
 ### Day008
 **Day008: Writing a Square Wave to DirectSound**  
+
+### Day009
+**Day009: Variable-Pitch Sine Wave Output**  
