@@ -46,3 +46,8 @@ Learn how to request a cache and cache structure for sound.
 
 ### Day009
 **Day009: Variable-Pitch Sine Wave Output**  
+
+### Day010
+**Day010: QueryPerformanceCounter and RDTSC**  
+QueryPerformanceCounter: function in the Windows API used to obtain high-precision timer values. It is often used in scenarios that require high-resolution time measurement, such as precise performance analysis, timers, frame rate control, etc.  
+RDTSC: This instruction returns the number of clock cycles since the CPU started up.(Notice: Contains clock cycles used for task switches)  
