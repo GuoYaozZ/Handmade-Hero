@@ -51,3 +51,19 @@ Learn how to request a cache and cache structure for sound.
 **Day010: QueryPerformanceCounter and RDTSC**  
 QueryPerformanceCounter: function in the Windows API used to obtain high-precision timer values. It is often used in scenarios that require high-resolution time measurement, such as precise performance analysis, timers, frame rate control, etc.  
 RDTSC: This instruction returns the number of clock cycles since the CPU started up.(Notice: Contains clock cycles used for task switches)  
+
+### Day011
+**Day011: The Basics of Platform API Design**  
+Its straightforward, you just wrap up the types in your own open handle, and in the platform non-specific part you just don't show what it is.  
+  
+Case:  
+```
+linux_handmade.cpp -> handmade.cpp -> handmade.h
+win32_handmade.cpp -> handmade.cpp -> handmade.h
+specific part      -> non-specific part
+```  
+Notice: Specific part code used to compile some specific platform code and call it in non-specific part code.  
+Notice: IF you want try different platform, there is a **[Handmade Penguin](https://davidgow.net/handmadepenguin/)** in community.
+
+Avoid complicate logics, and treat GAME as a service of OS  
+
