@@ -71,3 +71,8 @@ Avoid complicate logics, and treat GAME as a service of OS
 **Day012: Platform independent Sound Output**  
 To do Platform-independent work, I have to make sure that I understand all the work before. I guess I need a  time to do some review work?  
 Updated the ./misc/build.bat to fit with the new name of project.  
+
+### Day013
+**Day013: Platform-independent User Input**  
+
+
