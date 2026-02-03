@@ -74,5 +74,26 @@ Updated the ./misc/build.bat to fit with the new name of project.
 
 ### Day013
 **Day013: Platform-independent User Input**  
+```
+union
+{
+	game_button_state Buttons[6];
+	struct
+	{
+		game_button_state Up;
+		game_button_state Down;
+		game_button_state Left;
+		game_button_state Right;
+		game_button_state LeftShoulder;
+		game_button_state RightShoulder;
+	};
+};
+// a union can choose Up, Down... or loop Buttons[0], Buttons[1]...
+```
+
+### Day014
+**Day014: Platform-independent Game Memory**  
+VirtualAlloc: Reserves or commits a region of pages in the virtual address space of the calling process. Memory allocated by this function is automatically initialized to zero, unless MEM_RESET is specified.  
+Q: How to trans some parameters in VS2022 while debugging?  
 
 
