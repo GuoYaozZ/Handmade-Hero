@@ -97,3 +97,11 @@ VirtualAlloc: Reserves or commits a region of pages in the virtual address space
 Q: How to trans some parameters in VS2022 while debugging?  
 
 
+### Day015:
+**Day015: Platform-independent Debug File I/O**  
+Q: How to trans some parameters in VS2022 while debugging?  
+A: sln(right click)->Properties->C/C++->cmd: -DHANDMADE_INTERNAL -DHANDMADE_SLOW  
+```
+CreateFileA(Filename, GENERIC_WRITE, 0, 0, CREATE_ALWAYS, 0, 0);
+```
+This Function wont create folders auto. so you have to create the folder manually and then the file will be created.
