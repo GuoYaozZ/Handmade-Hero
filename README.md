@@ -104,4 +104,23 @@ A: sln(right click)->Properties->C/C++->cmd: -DHANDMADE_INTERNAL -DHANDMADE_SLOW
 ```
 CreateFileA(Filename, GENERIC_WRITE, 0, 0, CREATE_ALWAYS, 0, 0);
 ```
-This Function wont create folders auto. so you have to create the folder manually and then the file will be created.
+This Function wont create folders auto. so you have to create the folder manually and then the file will be created.  
+
+
+### Day016:
+**Day016: VisualStudio Compiler Switches**  
+1. Some points about build.bat: the parameters meaning and how to use.  
+```
+cl -nologo -GR- -EHa- -Oi -WX -W4 -wd4201 -wd4100 -wd4189 -DHANDMADE_INTERNAL=1 -DHANDMADE_SLOW=1 -DHANDMADE_WIN32=1 -Z7 ..\..\HandMadeHero\win32_handmade.cpp user32.lib gdi32.lib
+```
+2. About how to build based on Win64 of Win32  
+3. A good way is to test project on virtual machine or other devices.  
+4. By default the linker wont create a Windows XP compatible binary.  
+```
+cl -MT -nologo -Gm- -GR- -EHa- -Oi -WX -W4 -wd4201 -wd4100 -wd4189 -DHANDMADE_INTERNAL=1 -DHANDMADE_SLOW=1 -DHANDMADE_WIN32=1 -Z7 -Fmwin32_handmade.map ..\..\HandMadeHero\win32_handmade.cpp /link -opt:ref -subsystem:window,5.1 user32.lib gdi32.lib
+// -MD: use the dll.
+// -MT: use static library
+// -GM-: Turn off any sorts of incremental build stuff, and mimium rebuild.
+// -Fm: Tells the linker loaction to stick a map file. Then there is a ".map" file which means ----- where all the functions are in your actual executable.
+// -opt:ref: Dont put anything into the executable.(like some win32 runtime function)
+```
