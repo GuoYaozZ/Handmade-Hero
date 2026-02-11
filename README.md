@@ -141,3 +141,13 @@ else if (VKCode == 'A')
 ...
 ```
 3. Finally I found Out: Because I used a Chinese input method...  
+
+
+### Day018
+**Day 018: Enforcing a Video Frame Rate**  
+1. add  
+```
+#pragma comment(lib, "winmm.lib") 
+```
+to use the timeBeginPeriod function.  
+2. 
